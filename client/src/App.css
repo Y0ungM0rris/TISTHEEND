@@ -1,0 +1,310 @@
+.App {
+  background-color: #2A2A2A;
+}
+
+/*
+*{
+  font-family: "Montserrat", sans-serif;
+}
+*/
+
+:root {
+  --back-image: url('./assets/back.png');
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.AdminPagination{
+  flex-direction: row;
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+}
+
+.authMain{
+  height: 100vh;  
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.SliderImg{
+  width: 100%;
+  height: 40vw;
+  display: block;
+  margin: 0 auto;
+}
+
+.SliderContainer{
+  width: 100%;
+  height: 40vw;
+  margin: 0 auto;
+}
+
+.AdmonOfflineList{
+  list-style-type: none;
+  margin: 0 auto;
+  width: 50vw;
+}
+
+.card-list {
+  display: flex; 
+  flex-wrap: wrap; /* Разрешаем перенос карточек на новую строку */
+  justify-content: space-around; /* Распределяем карточки равномерно по контейнеру */
+}
+
+.card {
+  width: 25vw;
+  height: auto;
+  margin: 2vw;
+  transition: transform 0.3s ease;
+  background-color: #33333300;
+  color: white;
+  border: 0;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card a {
+  text-decoration: none;
+  color: white;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  border: 0;
+}
+
+.card h3,
+.card p {
+  margin: 0;
+  pointer-events: none;
+}
+
+.cardList {
+  width: 100%;
+  padding: 2vw;
+}
+
+
+
+.descriptionBlockOneTitle{
+  color: white;
+  padding: 2vw;
+  margin-right: 5vw;
+  background-color: #373737;
+  box-shadow: -12px 12px 12px 0 rgba(0, 0, 0, 0.25);
+}
+
+.descriptionBlockOne{
+  padding: 5vw 10vw 5vw 10vw;
+  background: linear-gradient(to bottom right, #191919, #252525);
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.descriptionBlockOneText{
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.descriptionBlockTwo {
+  background-image: var(--back-image); 
+}
+
+.UserInfo{
+  padding: 4vw 0 4vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.descriptionBlockOneImg{
+  width: 50vw;
+}
+
+.offlineUserListItem{
+  width: 70vw;
+  color: white;
+  background-color: #373737;
+  padding: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 2vw;
+}
+
+.AdminOfflinePaginationStatusEdit{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.OnlineAppointmentAdd{
+  background-color: #191919;
+  width: 40vw;
+  align-items: center;
+  padding: 2vw;
+  color: white;
+  border-radius: 1vw;
+}
+
+.OnlineAppointmentAddForm{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1vw;
+}
+
+.OnlineAppointmentAddInput {
+  background-color: #2A2A2A;
+  color: white;
+  width: 15vw;
+  padding: 0.5vw;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color-scheme: dark;
+  box-sizing: border-box;
+}
+
+/* Если вы хотите добавить стили при фокусе на элементе */
+.OnlineAppointmentAddInput:focus {
+  outline: none;
+  border-color: rgb(255, 206, 47); /* Цвет при фокусе можно изменить по вашему усмотрению */
+}
+
+
+.datepicker-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.datepicker-input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.ViewPage{
+  color: white;
+  background: #2A2A2A;
+}
+
+.ViewApp{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5vw 0 5vw 0;
+}
+
+.ViewHeader{
+  padding: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ViewPhoto{
+  width: 28vw;
+}
+
+.UserPage{
+  background-color: #2A2A2A;
+  color: white;
+}
+
+.UserSettings{
+  width: 20vw;
+}
+
+.SettingsButtons{
+  flex-direction: column;
+  align-items: center;
+}
+
+.exhibitList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+
+.ExhibitCard{
+  pointer-events: none;
+  width: 20vw;
+  height: auto;
+  margin: 2vw;
+  transition: transform 0.3s ease;
+  background-color: #33333300;
+  color: white;
+  border: 0;
+  text-align: left;
+}
+
+.Exhibit{
+  padding: 2vw 0 0 0;
+  margin-bottom: 6vw;
+  background-image: var(--back-image); 
+}
+
+.UserPageList{
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  margin: 4vw;
+  margin-left: 15vw;
+}
+
+.authImgConteiner{
+  flex-direction: column;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
